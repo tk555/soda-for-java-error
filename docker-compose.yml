@@ -1,0 +1,12 @@
+services:
+  oracledb:
+    image: container-registry.oracle.com/database/adb-free:latest-23ai
+    ports:
+      - 1521:1521
+      - 1522:1522
+      - 8443:8443
+      - 27017:27017
+    environment:
+      - WORKLOAD_TYPE=ATP
+      - WALLET_PASSWORD=Sug1_Passw0rd_dayo
+      - ADMIN_PASSWORD=Sug1_Passw0rd_dayo
